@@ -1,0 +1,23 @@
+{% extends "dashbase.html" %}
+{% block ntitle %} Purchase Data {% endblock ntitle %}
+{% block ncontent %}
+<form method='post'>
+<label for="network-data">Select Network:</label>
+    <select name="network_data" id="network-data">
+        <option value="mtn">MTN</option>
+        <option value="airtel">AIRTEL</option>
+        <option value="glo">GLO</option>
+        <option value="etisalat">9MOBILE</option>
+    </select>
+    <input type='submit' value='submit'>
+</form>
+<form method='post' action='https://newwebpay.qa.interswitchng.com/collections/w/pay'>
+    <input name='merchant_code' value='MX007' />
+    <input name='pay_item_id' value='101007' />
+    <input name='site_redirect_url' value='https://example.com/payment-response' />
+    <input name='txn_ref' value='sample_txn_ref_123' />
+    <input name='amount' value='10000' />
+    <input name='currency' value='566' />
+    <input type='submit' value='Make Payment' />
+</form>
+{% endblock %}

@@ -1,0 +1,5 @@
+{% extends 'dashbase.html' %}{% block ntitle %} Account - {{ current_user.fullname }} {% endblock %}
+{% block ncontent %}
+<p>Name : {{ current_user.fullname }}</p>
+<p>Email : {{ current_user.email }}</p>
+{% endblock %}

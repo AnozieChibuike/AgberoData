@@ -1,0 +1,6 @@
+app/api/__pycache__
+app.db
+ngrok.exe
+node_modules
+env
+app/__pycache__

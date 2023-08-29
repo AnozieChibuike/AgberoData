@@ -1,0 +1,21 @@
+<html>
+   <head>
+      <title>Admin</title>
+   </head>
+   <body>
+  <table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+   {% for user in users %}
+   {% if user.email %}
+  <tr>
+    <td>{{ user.fullname }}</td>
+    <td>{{ user.email }}</td>
+  </tr>
+  {% endif %}
+  {% endfor %}
+</table>
+</body>
+</html>
