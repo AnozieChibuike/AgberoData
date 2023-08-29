@@ -4,3 +4,4 @@ ngrok.exe
 node_modules
 env
 app/__pycache__
+__pycache__
